@@ -1,0 +1,108 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import SeccionVideos from '@/components/secciones/SeccionVideos.astro'
+---
+
+<Layout title='Servicios de la Auxiliar'>
+	<div class='mb-8'>
+		<a
+			class='opts m-2 p-4 rounded-lg bg-[#222] border-[1px] border-black overflow-y-scroll'
+			href='#expositor'
+		>
+			Impresora</a
+		>
+		<a
+			class='opts m-2 p-4 rounded-lg bg-[#222] border-[1px] border-black overflow-y-scroll'
+			href='#bandeja'
+		>
+			Troqueladora</a
+		>
+		<a
+			class='opts m-2 p-4 rounded-lg bg-[#222] border-[1px] border-black overflow-y-scroll'
+			href='#bandeja'
+		>
+			Pegadora</a
+		>
+		<a
+			class='opts m-2 p-4 rounded-lg bg-[#222] border-[1px] border-black overflow-y-scroll'
+			href='#bandeja'
+		>
+			Ploter</a
+		>
+	</div>
+	<!-- <video
+		autoplay
+		loop
+		muted
+		class='absolute z-0 w-full h-full object-cover'
+	>
+		<source src='/videos/videosServicios/videoImpresora.webm' />
+	</video> -->
+	<div class='bordeVerde flex flex-col justify-center items-center'>
+		<div class='flex flex-row items-center'>
+			<video
+				controls
+				autoplay
+				loop
+				muted
+				class='w-[66%] aspect-square object-cover flex flex-col justify-center items-center rounded-lg m-2'
+			>
+				<source src='/videos/videosServicios/videoImpresora.webm' />
+			</video>
+			<span class='block w-[55%] bordeRojo p-4'>
+				Impresora flexográfica de 3 cuerpos...
+			</span>
+		</div>
+		<div class='flex flex-row items-center'>
+			<video
+				controls
+				autoplay
+				loop
+				muted
+				class='w-[66%] aspect-square object-cover flex flex-col justify-center items-center rounded-lg m-2'
+			>
+				<source src='/videos/videosServicios/videoImpresora.webm' />
+			</video>
+			<span class='block w-[55%] bordeRojo p-4'>
+				Impresora flexográfica de 3 cuerpos...
+			</span>
+		</div>
+		<div class='flex flex-row items-center'>
+			<video
+				controls
+				autoplay
+				loop
+				muted
+				class='w-[66%] aspect-square object-cover flex flex-col justify-center items-center rounded-lg m-2'
+			>
+				<source src='/videos/videosServicios/videoImpresora.webm' />
+			</video>
+			<span class='block w-[55%] bordeRojo p-4'>
+				Impresora flexográfica de 3 cuerpos...
+			</span>
+		</div>
+		<div class='flex flex-row items-center'>
+			<video
+				controls
+				autoplay
+				loop
+				muted
+				class='w-[66%] aspect-square object-cover flex flex-col justify-center items-center rounded-lg m-2'
+			>
+				<source src='/videos/videosServicios/videoImpresora.webm' />
+			</video>
+			<span class='block w-[55%] bordeRojo p-4'>
+				Impresora flexográfica de 3 cuerpos...
+			</span>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.opts {
+		background-color: var(--auxi2);
+	}
+	:global(.light) .opts {
+		background-color: #fff;
+	}
+</style>
