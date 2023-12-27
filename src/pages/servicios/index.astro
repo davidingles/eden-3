@@ -57,7 +57,7 @@ import SeccionVideos from '@/components/secciones/SeccionVideos.astro'
 	<div class='bordeVerde flex flex-col justify-center items-center'>
 		<div
 			id='impresora'
-			class='flex flex-row items-center my-4'
+			class='vid flex flex-row items-center my-4'
 		>
 			<video
 				controls
@@ -69,12 +69,12 @@ import SeccionVideos from '@/components/secciones/SeccionVideos.astro'
 				<source src='/videos/videosServicios/videoImpresora2.webm' />
 			</video>
 			<span class='block w-[55%] bordeRojo p-4'>
-				Impresora flexográfica de 3 cuerpos...
+				Impresión flexográfica de 3 colores...
 			</span>
 		</div>
 		<div
 			id='troqueladora'
-			class='flex flex-row items-center'
+			class='vid flex flex-row items-center'
 		>
 			<video
 				controls
@@ -85,13 +85,11 @@ import SeccionVideos from '@/components/secciones/SeccionVideos.astro'
 			>
 				<source src='/videos/videosServicios/videoTroqueladora.webm' />
 			</video>
-			<span class='block w-[55%] bordeRojo p-4'>
-				Impresora flexográfica de 3 cuerpos...
-			</span>
+			<span class='block w-[55%] bordeRojo p-4'> Troqueladora plana...</span>
 		</div>
 		<div
 			id='pegadora'
-			class='flex flex-row items-center'
+			class='vid flex flex-row items-center'
 		>
 			<video
 				controls
@@ -102,13 +100,11 @@ import SeccionVideos from '@/components/secciones/SeccionVideos.astro'
 			>
 				<source src='/videos/videosServicios/videoImpresora.webm' />
 			</video>
-			<span class='block w-[55%] bordeRojo p-4'>
-				Impresora flexográfica de 3 cuerpos...
-			</span>
+			<span class='block w-[55%] bordeRojo p-4'> Pegadora automática...</span>
 		</div>
 		<div
 			id='ploter'
-			class='flex flex-row items-center'
+			class='vid flex flex-row items-center'
 		>
 			<video
 				controls
@@ -120,7 +116,7 @@ import SeccionVideos from '@/components/secciones/SeccionVideos.astro'
 				<source src='/videos/videosServicios/videoImpresora.webm' />
 			</video>
 			<span class='block w-[55%] bordeRojo p-4'>
-				Impresora flexográfica de 3 cuerpos...
+				Ploter de corte digital...
 			</span>
 		</div>
 	</div>
@@ -135,5 +131,8 @@ import SeccionVideos from '@/components/secciones/SeccionVideos.astro'
 	}
 	html {
 		scroll-behavior: smooth;
+	}
+	.vid {
+		margin-bottom: 2rem;
 	}
 </style>
